@@ -1,0 +1,14 @@
+<Project>
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('Common.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+        <PreserveCompilationContext>true</PreserveCompilationContext>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <DebugType>full</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+
+        <CollectCoverage>true</CollectCoverage>
+        <CoverletOutputFormat>json,lcov,cobertura</CoverletOutputFormat>
+        <CoverletOutput>$([System.IO.Path]::GetDirectoryName($([MSBuild]::GetPathOfFileAbove('Common.Build.props', '$(MSBuildThisFileDirectory)../'))))/coverage/$(MSBuildProjectName.Replace('.', '-'))-$(TargetFramework)</CoverletOutput>
+    </PropertyGroup>
+</Project>

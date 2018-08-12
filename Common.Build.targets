@@ -1,0 +1,24 @@
+<Project>
+    <ItemGroup>
+        <PackageReference Update="Newtonsoft.Json" Version="11.0.2" />
+        <PackageReference Update="Rocket.Surgery.Extensions" Version="0.8.3" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Update="Rocket.Surgery.Build.Metadata" Version="2.1.0" PrivateAssets="All" />
+        <PackageReference Update="SourceLink.Copy.PdbFiles" Version="2.8.3" PrivateAssets="All" />
+        <PackageReference Update="SourceLink.Create.CommandLine" Version="2.8.3" PrivateAssets="All" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Update="Autofac.Extras.FakeItEasy" Version="5.0.1" />
+        <PackageReference Update="Bogus" Version="22.3.2" />
+        <PackageReference Update="coverlet.msbuild" Version="2.1.1" />
+        <PackageReference Update="FakeItEasy" Version="4.7.1" />
+        <PackageReference Update="FakeItEasy.Analyzer.CSharp" Version="4.7.1" />
+        <PackageReference Update="FluentAssertions" Version="5.4.1" />
+        <PackageReference Update="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+        <PackageReference Update="Rocket.Surgery.Extensions.Testing" Version="0.8.2" />
+        <PackageReference Update="xunit" Version="2.4.0" />
+        <PackageReference Update="xunit.runner.visualstudio" Version="2.4.0" />
+        <PackageReference Update="XunitXml.TestLogger" Version="2.0.0" />
+    </ItemGroup>
+</Project>

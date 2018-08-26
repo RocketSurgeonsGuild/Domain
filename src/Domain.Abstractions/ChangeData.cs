@@ -3,22 +3,16 @@ using System;
 
 namespace Rocket.Surgery.Domain
 {
-    public class ChangeData
+    public class ChangeData<TKey>
     {
         [JsonConstructor]
-        public ChangeData(string by, DateTimeOffset? at)
+        public ChangeData(TKey by, DateTimeOffset? at)
         {
             By = by;
             At = at;
         }
 
-        public ChangeData(Guid by, DateTimeOffset? at)
-        {
-            By = by.ToString("N");
-            At = at;
-        }
-
-        public string By { get; }
+        public TKey By { get; }
         public DateTimeOffset? At { get; }
     }
 }

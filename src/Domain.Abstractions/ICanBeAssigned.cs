@@ -1,7 +1,7 @@
 namespace Rocket.Surgery.Domain
 {
-    public interface ICanBeAssigned
+    public interface ICanBeAssigned<TKey>
     {
-        AssignedUsersData AssignedUsers { get; }
+        AssignedUsersData<TKey> AssignedUsers { get; }
     }
 }

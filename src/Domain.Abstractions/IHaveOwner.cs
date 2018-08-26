@@ -1,7 +1,7 @@
 ﻿namespace Rocket.Surgery.Domain
 {
-    public interface IHaveOwner
+    public interface IHaveOwner<TKey>
     {
-        OwnerData Owner { get; }
+        OwnerData<TKey> Owner { get; }
     }
 }

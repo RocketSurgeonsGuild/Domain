@@ -4,19 +4,19 @@ using Newtonsoft.Json;
 
 namespace Rocket.Surgery.Domain
 {
-    public class AssignedUsersData
+    public class AssignedUsersData<TKey>
     {
         [JsonConstructor]
-        public AssignedUsersData(IEnumerable<string> userIds)
+        public AssignedUsersData(IEnumerable<TKey> userIds)
         {
-            UserIds = new HashSet<string>(userIds, StringComparer.OrdinalIgnoreCase);
+            UserIds = new HashSet<TKey>(userIds);
         }
 
         public AssignedUsersData()
         {
-            UserIds = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            UserIds = new HashSet<TKey>();
         }
 
-        public ISet<string> UserIds { get; }
+        public ISet<TKey> UserIds { get; }
     }
 }

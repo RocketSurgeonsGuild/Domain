@@ -1,7 +1,7 @@
 ﻿namespace Rocket.Surgery.Domain
 {
-    public interface IHaveCreatedBy
+    public interface IHaveCreatedBy<TKey>
     {
-        ChangeData Created { get; }
+        ChangeData<TKey> Created { get; }
     }
 }

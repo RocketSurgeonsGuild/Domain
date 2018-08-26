@@ -3,18 +3,14 @@ using Newtonsoft.Json;
 
 namespace Rocket.Surgery.Domain
 {
-    public class OwnerData
+    public class OwnerData<TKey>
     {
         [JsonConstructor]
-        public OwnerData(string id)
+        public OwnerData(TKey id)
         {
             Id = id;
         }
-        public OwnerData(Guid id)
-        {
-            Id = id.ToString("N");
-        }
 
-        public string Id { get; }
+        public TKey Id { get; }
     }
 }

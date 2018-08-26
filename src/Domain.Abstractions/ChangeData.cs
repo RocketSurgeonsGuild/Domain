@@ -3,7 +3,7 @@ using System;
 
 namespace Rocket.Surgery.Domain
 {
-    public struct ChangeData
+    public class ChangeData
     {
         [JsonConstructor]
         public ChangeData(string by, DateTimeOffset? at)

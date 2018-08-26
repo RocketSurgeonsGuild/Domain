@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace Rocket.Surgery.Domain
 {
-    public struct OwnerData
+    public class OwnerData
     {
         [JsonConstructor]
         public OwnerData(string id)

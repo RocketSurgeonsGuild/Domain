@@ -11,6 +11,8 @@ namespace Rocket.Surgery.Domain
             Id = id;
         }
 
+        public OwnerData() { }
+
         public TKey Id { get; }
     }
 }

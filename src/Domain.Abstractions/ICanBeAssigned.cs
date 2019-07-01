@@ -1,7 +1,7 @@
 namespace Rocket.Surgery.Domain
 {
     /// <summary>
-    /// Interface ICanBeAssigned
+    ///  ICanBeAssigned
     /// </summary>
     /// <typeparam name="TKey">The type of the t key.</typeparam>
     public interface ICanBeAssigned<TKey>

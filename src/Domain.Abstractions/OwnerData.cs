@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 namespace Rocket.Surgery.Domain
 {
     /// <summary>
-    /// Class OwnerData.
+    /// OwnerData.
     /// </summary>
     /// <typeparam name="TKey">The type of the t key.</typeparam>
     public class OwnerData<TKey>

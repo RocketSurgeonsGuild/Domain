@@ -1,7 +1,7 @@
 ﻿namespace Rocket.Surgery.Domain
 {
     /// <summary>
-    /// Interface IHaveOwner
+    ///  IHaveOwner
     /// </summary>
     /// <typeparam name="TKey">The type of the t key.</typeparam>
     public interface IHaveOwner<TKey>

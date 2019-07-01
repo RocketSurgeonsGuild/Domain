@@ -5,7 +5,7 @@ using System;
 namespace Rocket.Surgery.Domain
 {
     /// <summary>
-    /// Class ChangeData.
+    /// ChangeData.
     /// </summary>
     /// <typeparam name="TKey">The type of the t key.</typeparam>
     public class ChangeData<TKey>

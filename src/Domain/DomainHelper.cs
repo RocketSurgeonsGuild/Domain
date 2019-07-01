@@ -3,7 +3,7 @@ using Rocket.Surgery.Reflection.Extensions;
 namespace Rocket.Surgery.Domain
 {
     /// <summary>
-    /// Class DomainHelper.
+    /// DomainHelper.
     /// </summary>
     public static class DomainHelper
     {

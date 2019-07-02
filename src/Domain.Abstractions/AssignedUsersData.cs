@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using Newtonsoft.Json;
 
 namespace Rocket.Surgery.Domain
@@ -8,6 +9,7 @@ namespace Rocket.Surgery.Domain
     /// AssignedUsersData.
     /// </summary>
     /// <typeparam name="TKey">The type of the t key.</typeparam>
+    [PublicAPI]
     public class AssignedUsersData<TKey>
     {
         /// <summary>

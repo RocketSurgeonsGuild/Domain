@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using NodaTime;
 using System;
+using JetBrains.Annotations;
 
 namespace Rocket.Surgery.Domain
 {
@@ -8,6 +9,7 @@ namespace Rocket.Surgery.Domain
     /// ChangeData.
     /// </summary>
     /// <typeparam name="TKey">The type of the t key.</typeparam>
+    [PublicAPI]
     public class ChangeData<TKey>
     {
         /// <summary>
@@ -46,6 +48,7 @@ namespace Rocket.Surgery.Domain
         /// </summary>
         /// <value>The by.</value>
         public TKey By { get; }
+
         /// <summary>
         /// Gets at.
         /// </summary>

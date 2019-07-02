@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using Rocket.Surgery.Reflection.Extensions;
 
 namespace Rocket.Surgery.Domain
@@ -5,6 +6,7 @@ namespace Rocket.Surgery.Domain
     /// <summary>
     /// DomainHelper.
     /// </summary>
+    [PublicAPI]
     public static class DomainHelper
     {
         private static readonly BackingFieldHelper BackingFieldHelper = new BackingFieldHelper();

@@ -1,9 +1,12 @@
-﻿namespace Rocket.Surgery.Domain
+﻿using JetBrains.Annotations;
+
+namespace Rocket.Surgery.Domain
 {
     /// <summary>
     ///  IHaveOwner
     /// </summary>
     /// <typeparam name="TKey">The type of the t key.</typeparam>
+    [PublicAPI]
     public interface IHaveOwner<TKey>
     {
         /// <summary>
